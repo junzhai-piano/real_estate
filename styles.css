@@ -1,0 +1,167 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #0bbf6e;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url("hero-bg.jpg");
+  background-size: cover;
+  color: #9d1592;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-weight: bolder;
+  font-size: larger;
+  font-style: italic;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #269468;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #5f2424;
+}
+
+/* Featured listings section styles */
+.featured-listings {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.listing {
+  margin-bottom: 40px;
+}
+
+.listing img {
+  max-width: 100%;
+}
+
+.listing h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.listing p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.flex-item {
+  width: 30%;
+  padding: 20px;
+  border: 5px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.feature-link {
+  color: #007bff; /* Change the link text color */
+  text-decoration: none; /* Remove underlines (you can use 'underline', 'none', etc.) */
+  font-size: 18px; /* Adjust the font size */
+}
+
+.feature-link:hover {
+  color: #ff5500; /* Change link color on hover */
+  background-color: #869c83;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+@keyframes roll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0); /* Keeps the element in its final position */
+  }
+}
+
+.rolling-h1 {
+  font-size: 36px;
+  position: absolute;
+  top: 12%;
+  left: 35%;
+  animation: roll 2s ease-out; /* Adjust animation duration as needed */
+  white-space: nowrap;
+}
